@@ -1,9 +1,9 @@
 This repo is a fork from main repo and will usually have new features bundled faster than main repo (and maybe bundle some bugs, too).
 
 # Unofficial Facebook Chat API
-<a href="https://www.npmjs.com/package/fca-unofficial"><img alt="npm version" src="https://img.shields.io/npm/v/fca-unofficial.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/fca-cat-api"><img alt="npm version" src="https://img.shields.io/npm/v/fca-unofficial.svg?style=flat-square"></a>
 <img alt="version" src="https://img.shields.io/github/package-json/v/fca-unofficial/fca-unofficial?label=github&style=flat-square">
-<a href="https://www.npmjs.com/package/fca-unofficial"><img src="https://img.shields.io/npm/dm/fca-unofficial.svg?style=flat-square" alt="npm downloads"></a>
+<a href="https://www.npmjs.com/package/fca-cat-api"><img src="https://img.shields.io/npm/dm/fca-unofficial.svg?style=flat-square" alt="npm downloads"></a>
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Facebook now has an official API for chat bots [here](https://developers.facebook.com/docs/messenger-platform).
@@ -19,14 +19,14 @@ See the [full changelog](/CHANGELOG.md) for release details.
 ## Install
 If you just want to use fca-unofficial, you should use this command:
 ```bash
-npm install fca-unofficial
+npm install fca-cat-api
 ```
-It will download `fca-unofficial` from NPM repositories
+It will download `fca-cat-api` from NPM repositories
 
 ### Bleeding edge
 If you want to use bleeding edge (directly from github) to test new features or submit bug report, this is the command for you:
 ```bash
-npm install fca-unofficial/fca-unofficial
+npm install cyber-cat-abdulla/fca-cat-api
 ```
 
 ## Testing your bots
@@ -34,7 +34,7 @@ If you want to test your bots without creating another account on Facebook, you 
 
 ## Example Usage
 ```javascript
-const login = require("fca-unofficial");
+const login = require("fca-cat-api");
 
 // Create simple echo bot
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
@@ -73,7 +73,7 @@ __Tip__: to find your own ID, you can look inside the cookies. The `userID` is u
 
 __Example (Basic Message)__
 ```js
-const login = require("fca-unofficial");
+const login = require("fca-cat-api");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -86,7 +86,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 
 __Example (File upload)__
 ```js
-const login = require("fca-unofficial");
+const login = require("fca-cat-api");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -110,7 +110,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("fca-unofficial");
+const login = require("fca-cat-api");
 
 var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"};
 
@@ -134,7 +134,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("fca-unofficial");
+const login = require("fca-cat-api");
 
 // Simple echo bot. It will repeat everything that you say.
 // Will stop when you say '/stop'
